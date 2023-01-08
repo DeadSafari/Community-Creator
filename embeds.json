@@ -1,0 +1,124 @@
+{
+    "rules": {
+        "footer": {
+            "text": "footer",
+            "icon_url": "url for image"
+        },
+        "image": {
+            "url": "url for image"
+        },
+        "thumbnail": {
+            "url": "url for image"
+        },
+        "author": {
+            "name": "author",
+            "url": "https://google.com/",
+            "icon_url": "url for image"
+        },
+        "fields": [
+            {
+                "inline": false,
+                "name": "field 1",
+                "value": "value 1"
+            }
+        ],
+        "color": 15158332,
+        "timestamp": "2023-01-08T16:51:02.447466+00:00",
+        "type": "rich",
+        "description": "This is a test embed.",
+        "url": "https://google.com/",
+        "title": "This is a title"
+    },
+    "verify":
+    {
+        "footer": {
+            "text": "footer",
+            "icon_url": "url for image"
+        },
+        "image": {
+            "url": "url for image"
+        },
+        "thumbnail": {
+            "url": "url for image"
+        },
+        "author": {
+            "name": "author",
+            "url": "https://google.com/",
+            "icon_url": "url for image"
+        },
+        "fields": [
+            {
+                "inline": false,
+                "name": "field 1",
+                "value": "value 1"
+            }
+        ],
+        "color": 15158332,
+        "timestamp": "2023-01-08T16:51:02.447466+00:00",
+        "type": "rich",
+        "description": "This is a test embed.",
+        "url": "https://google.com/",
+        "title": "TEST"
+    },
+    "reaction-roles":
+    {
+        "footer": {
+            "text": "footer",
+            "icon_url": "url for image"
+        },
+        "image": {
+            "url": "url for image"
+        },
+        "thumbnail": {
+            "url": "url for image"
+        },
+        "author": {
+            "name": "author",
+            "url": "https://google.com/",
+            "icon_url": "url for image"
+        },
+        "fields": [
+            {
+                "inline": false,
+                "name": "field 1",
+                "value": "value 1"
+            }
+        ],
+        "color": 15158332,
+        "timestamp": "2023-01-08T16:51:02.447466+00:00",
+        "type": "rich",
+        "description": "This is a test embed.",
+        "url": "https://google.com/",
+        "title": "TEST"
+    },
+    "🎫┆tickets": {
+        "footer": {
+            "text": "footer",
+            "icon_url": "url for image"
+        },
+        "image": {
+            "url": "url for image"
+        },
+        "thumbnail": {
+            "url": "url for image"
+        },
+        "author": {
+            "name": "author",
+            "url": "https://google.com/",
+            "icon_url": "url for image"
+        },
+        "fields": [
+            {
+                "inline": false,
+                "name": "field 1",
+                "value": "value 1"
+            }
+        ],
+        "color": 15158332,
+        "timestamp": "2023-01-08T16:51:02.447466+00:00",
+        "type": "rich",
+        "description": "This is a test embed.",
+        "url": "https://google.com/",
+        "title": "TEST"
+    }
+}
