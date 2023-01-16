@@ -1,5 +1,63 @@
 import aiosqlite3
 
+async def create_economy_table():
+    # Connect to the database
+    db = await aiosqlite3.connect('mydatabase.db')
+
+    # Create a cursor
+    c = await db.cursor()
+
+    # Create the 'economy' table
+    await c.execute('''CREATE TABLE IF NOT EXISTS economy (id integer, balance integer, bank_balance integer, items text, settings text)''')
+
+    # Save (commit) the changes
+    await db.commit()
+
+    # Close the connection
+    await db.close()
+
+
+
+async def create_banned_words_table():
+    # Connect to the database
+    db = await aiosqlite3.connect('mydatabase.db')
+
+    # Create a cursor
+    c = await db.cursor()
+
+    # Create the 'banned_words' table
+    await c.execute('''CREATE TABLE IF NOT EXISTS banned_words (word text)''')
+
+    # Save (commit) the changes
+    await db.commit()
+
+    # Close the connection
+    await db.close()
+
+async def get_banned_words():
+    conn = await aiosqlite3.connect('mydatabase.db')
+    cursor = await conn.cursor()
+    await cursor.execute(f"SELECT * FROM banned_words")
+    rows = await cursor.fetchall()
+    banned_words = []
+    for row in rows:
+        banned_words.append(row[0])
+    return banned_words
+
+async def add_banned_word(word: str):
+    conn = await aiosqlite3.connect('mydatabase.db')
+    cursor = await conn.cursor()
+    await cursor.execute(f"INSERT INTO banned_words VALUES (?)", (word,))
+    await conn.commit()
+    await conn.close()
+
+async def remove_banned_word(word: str):
+    conn = await aiosqlite3.connect('mydatabase.db')
+    cursor = await conn.cursor()
+    await cursor.execute(f"DELETE FROM banned_words WHERE word = ?", (word,))
+    await conn.commit()
+    await conn.close()
+
 async def get_mod_log(uuid: str):
     conn = await aiosqlite3.connect('mydatabase.db')
     cursor = await conn.cursor()
