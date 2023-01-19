@@ -27,7 +27,7 @@ PREFIX = !
 `PREFIX`: This is the prefix that will be used for [Jishaku](https://github.com/Gorialis/jishaku/) commands.
 
 To get the `TOKEN` for the Discord Bot, head on over to the [Discord Develop Portal](https://discord.com/developers/applications). Once you're there, follow the gif below:
-![alt text](https://imgur.com/sduWAks)
+![image](https://imgur.com/sduWAks)
 After copying the token, put it in the `.env` file like this:
 ```
 TOKEN = TokenHere
@@ -40,4 +40,3 @@ py main.py
 For MacOS & Linux users:
 ```
 python main.py
-```
